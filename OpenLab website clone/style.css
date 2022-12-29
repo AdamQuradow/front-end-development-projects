@@ -1,0 +1,980 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+body {
+    scroll-behavior: smooth;
+}
+/* ========================navbar========================*/
+.homePage {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.navbar {
+    padding: 1.5rem 3.5rem;
+    background-color: transparent;
+    z-index: 29;
+    
+}
+.nav-center { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 91.8%;
+    background-color: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082);
+    z-index: 2;
+
+}
+
+.logo img {
+   width: 10rem;
+   z-index: 10;
+}
+.logo a:hover {
+    cursor: pointer;
+}
+.fa-chevron-right, .fa-chevron-left {
+    font-weight: bolder;
+}
+.toggleMenu .fa-bars {
+    font-size: 1.5rem;
+    color: blue;
+    cursor: pointer;
+}
+.closeMenu .fa-times {
+    position: absolute;
+    right: 6rem;
+    top: 3rem;
+    z-index: 9;
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.whatsappContainer {
+    position: fixed;
+    right: 5rem;
+    bottom: 8rem;
+    background-color: rgb(2, 2, 63);
+    border-radius: 50%;
+    z-index: 8;
+}
+.whatsappContainer .fa-whatsapp {
+font-size: 1.5rem;
+padding: 1rem;
+color: white;
+transition: transform .5s ease-in-out;
+}
+.whatsappContainer a .fa-whatsapp:hover {
+ transform: rotate(360deg);
+    }
+.backToTop {
+    display: block;
+    position: fixed;
+    right:5rem;
+    bottom: 4rem;
+    background-color: rgba(192, 192, 192, 0.623);
+    padding: .5rem 1rem;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.backToTop:hover {
+    background-color: rgb(192, 192, 192);
+}
+.show-link {
+opacity: 1;
+visibility: visible;
+}
+/* ========================Overlay========================*/
+.overlay {
+    background-color: rgba(0, 0, 255, 0.815);
+    top: -100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;height: 100%;
+    z-index: 9;
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.show-overlay {
+top: 0;
+}
+.overlay .overlay-menu {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-menu  li {
+margin-top: 1.2rem;
+text-align: center;
+list-style: none;
+}
+.overlay-menu  li a {
+    font-size: 1.4rem;
+    text-align: center;
+    color: aliceblue;
+}
+/* ========================end of Overlay========================*/
+/* ========================carousel========================*/
+.carousel {
+    position: relative;
+    top: -7.3rem;
+    z-index: -2;
+    margin: auto; 
+
+}
+.mySlides {
+    display: none;
+}
+.mySlides img {
+    vertical-align: middle;
+    height: 105vh;
+   
+}
+
+.text {
+    position: absolute;
+    color: aliceblue;
+    width: 70vw;
+    top: 20%;
+    left: 3.5rem;
+}
+.text  h1 {
+    font-size: 4.5rem;
+}
+.text p {
+    text-align: left;
+    font-size: 1.3rem;
+}
+.text .btn {
+    background-color: rgba(255, 255, 0, 0.637);
+    outline: none;
+    border: none;
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+    z-index: 99;
+    cursor: pointer;
+}
+.text .btn a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.dot {
+    position: relative;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+   border:1px solid aliceblue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.6s ease;
+    z-index: 7;
+    top: -13rem;
+    left: 3.5rem;
+}
+.active, .dot:hover {
+    background: aliceblue;
+}
+/* ========================end of carousel========================*/
+
+/* ========================programmeCategory========================*/
+
+.letGetStarted, .contactAndLocation {
+    background-color: rgba(252, 193, 0, 0.678);
+    padding: 5rem 0;
+    z-index: -99;
+}
+.letGetStarted .title h1, .latestNews .title h1 {
+text-align: center;
+margin-bottom: 3rem;
+color: rgba(0, 0, 255, 0.733);
+font-size: 1.7rem;
+}
+
+.programmeCategory {
+    margin: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.programmeCategory .category {
+    width: 17rem;
+    background-color: white;
+    padding: 2rem 1rem;
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.281);
+}
+ 
+.programmeCategory .category img {
+    width: 7rem;
+    margin: 0 auto;
+  text-align: center;
+}
+.programmeCategory .category h1 {
+    text-align: center;
+    margin: .7rem 0;
+}
+.programmeCategory .category p {
+    text-align: center;
+    margin: 1rem 0;
+}
+/* ========================programmeCategory========================*/
+/* ========================LatestNews========================*/
+.LatestNewsCategory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.LatestNewsCategory .latestNewsDetails{
+    width: 20rem;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.281);
+
+}
+.latestNews  {
+    padding: 5rem 0;
+}
+.LatestNewsCategory .latestNewsDetails img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.LatestNewsCategory .latestNewsDetails .LatestNewsInfo {
+    padding: 2rem 1rem;
+    display: grid;
+    justify-content: center;
+}
+.LatestNewsCategory .latestNewsDetails .LatestNewsInfo h1 {
+    padding-bottom: 1rem;
+}
+.latestNews .viewMore {
+ margin: 2.5rem 0;
+ display: flex;
+ justify-content: center;
+}
+.latestNews .viewMore .btn {
+    background-color: rgba(255, 76, 10, 0.801);
+    outline: none;
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.latestNews .viewMore .btn:hover {
+    background-color: rgba(255, 75, 10, 0.705);
+}
+
+.latestNews .viewMore .btn a {
+    color: aliceblue;
+    font-weight: 600;
+}
+/* ========================End of LatestNews========================*/
+/* ========================OpenLabAdvantage========================*/
+.OpenLabAdvantage {
+    background:linear-gradient( 0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),  url("img/network-Admin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+    padding: 0 10rem;
+}
+.OpenLabAdvantageDetails {
+   display: flex;
+   width: 70vw;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+.OpenLabAdvantageDetails h1 {
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+.OpenLabAdvantageDetails h2 {
+    color: aliceblue;
+}
+.OpenLabAdvantageDetails p {
+    font-size: 1.3rem;
+    margin: 1rem 1rem;
+    text-align: center;
+    color: aliceblue;
+}
+/* ========================End of OpenLabAdvantage========================*/
+/* ========================OpenLabVideo===============================*/
+.OpenLabVideo {
+    background-color: blue;
+    padding: 7rem 3rem;
+}
+.OpenLabVideoDetails {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.OpenLabVideoDetailsLeft {
+    width: 48vw;
+}
+.OpenLabVideoDetailsLeft h1 {
+    color: aliceblue;
+    font-size: 1.7rem;
+    margin-bottom: 1.2rem;
+}
+.OpenLabVideoDetailsLeft p {
+    color: aliceblue;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+.OpenLabVideoDetailsLeft .OpenLabVideoDetailsLeft-list h3 {
+color: aliceblue;
+}
+.OpenLabVideoDetailsLeft .OpenLabVideoDetailsLeft-list  ul {
+    margin-left: 1.5rem;
+    padding-top: 0.5rem;
+}
+.OpenLabVideoDetailsLeft .OpenLabVideoDetailsLeft-list  ul li {
+    color: aliceblue;
+    padding-bottom: .3rem;
+}
+.OpenLabVideoDetailsRight video {
+    width: 40vw;
+    margin-top: 1rem;
+}
+/* ========================End of OpenLabVideo========================*/
+/* ===========================diplomaProgrammes============================*/
+.diplomaProgrammes, .certificateProgrammes {
+    padding: 5rem 7rem;
+}
+.diplomaProgrammesTitle, .certificateProgrammesTitle {
+  display: grid;
+  justify-content: center;
+}
+.diplomaProgrammesTitle h1, .certificateProgrammesTitle h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: silver;
+}
+.diplomaProgrammesTitle h3, .certificateProgrammesTitle h3 {
+    padding-bottom: 2rem;
+    color: rgba(0, 0, 0, 0.712);
+}
+.programmes {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+.diplomaProgrammesCategory, .CertificateProgrammesCategory {
+    width: 18rem;
+    border-radius: 7px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.425);
+}
+.diplomaProgrammesCategory img{
+    width: 100%;
+    height: 25vh;
+    border-radius: 7px 7px 0 0;
+}
+.diplomaProgrammesCategoryDetails {
+    display: grid;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+.diplomaProgrammesCategoryDetails h4 {
+    text-align: center;
+    color: silver;
+}
+.diplomaProgrammesCategoryDetails p {
+    text-align: center;
+    padding: 1.5rem;
+}
+.diplomaProgrammesCategoryDetails h3 {
+    text-align: center;
+}
+/* ========================End of diplomaProgrammes========================*/
+/* ========================CertificateProgrammes===============================*/
+.CertificateProgrammesCategory img {
+    width: 100%;
+    height: 15vh;
+    border-radius: 7px 7px 0 0;
+}
+/* ========================End of CertificateProgrammes========================*/
+/* ========================.contactAndLocation========================*/
+.contactAndLocation {
+ display: grid;
+ align-items: center;
+ justify-content: center;
+}
+.contactAndLocation .title h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgba(0, 0, 255, 0.733);
+    font-size: 1.7rem;
+    }
+.contactAndLocation .title h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.582);
+}
+.contactAndLocationDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.contactAndLocationCenters {
+    background-color: snow;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.contactAndLocationCenters:hover {
+background-color: white;
+margin-top: -.8rem;
+}
+.contactAndLocationCenters h3 {
+    width: 13rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.767);
+    padding-bottom: .8rem;
+}
+.contactAndLocationCenters .address {
+margin-bottom: 1.3rem;
+color: rgba(0, 0, 0, 0.493);
+font-size: 14px;
+}
+.contactAndLocationCenters .contact p {
+padding-bottom: 0.5rem;
+color: rgba(0, 0, 0, 0.493);
+font-size: 14px;
+}
+.contactAndLocationCenters .contact p .fas, .contactAndLocationCenters .contact p .fab {
+    color: rgba(0, 128, 0, 0.664);
+}
+/* ========================End of .contactAndLocation========================*/
+/* ========================testimonials========================*/
+.testimonials {
+    padding: 5rem 0;
+    background-color: rgba(220, 220, 220, 0.87);
+    position: relative;
+} 
+.testimonials  .title {
+    margin: 0 auto  ;
+    padding-bottom: 1rem;
+    width: 80vw;
+}
+.testimonials  .title h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 184, 0.76);
+}
+.testimonial-carousel {
+    width: 70%;  
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial-carousel .testimonial-carousel-container  {
+    display: flex;
+    margin: 2rem 0 4rem 0;
+}
+.testimonial-carousel-container .carousel-item {
+    display: flex;
+    min-width: 100%;
+    gap: 1.2rem;
+}
+.testimonial-carousel-container .carousel-item img {
+    width: 8rem;
+    height: 6.5rem;
+}
+.testimonial-carousel-container .carousel-item .carousel-item-description h3 {
+margin-top: 1.6rem;
+color: rgba(0, 0, 0, 0.664);
+}
+.testimonial-carousel-container .carousel-item .carousel-item-description p {
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 15px;
+    width: 60vw;
+}
+
+.buttons span.next-btn, .buttons span.prev-btn {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+padding: 12px 16px;
+color:rgba(0, 0, 0, 0.767);
+font-weight: bold;
+font-size: 22px;
+cursor: pointer;
+display: none;
+}
+.buttons span.next-btn {
+    right: 60px;
+}
+.buttons span.prev-btn {
+    left: 60px;
+}
+/* ========================End of testimonials"========================*/
+/* ========================Footer"========================*/
+.footer {
+padding: 3rem 0;
+background-color: rgba(2, 0, 12, 0.815);
+color: #fff;
+}
+.footer .title {
+    margin: 0 auto; 
+    width: 93vw;
+    padding-bottom: 3rem;
+}
+.footer .title h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.footer .title .underline, .underline {
+    height: 1px;
+    width: 93vw;
+   background-color: #fff;
+}
+
+.socialMedia {
+    display: flex;
+    column-gap: 2rem;
+   padding-bottom: 2rem;
+   justify-content: center;
+}
+.socialMedia a .fab {
+color: #fff;
+}
+.aboutOpenLabLocations {
+    width: 93vw;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+   column-gap: 2rem;
+   margin-bottom: 2rem;
+}
+.aboutOpenLabs h3 {
+padding-bottom: .7rem;
+}
+.aboutOpenLabs li {
+    list-style: none;
+}
+.aboutOpenLabs li a {
+    color: #fff;
+}
+.locationsDetails {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+}
+.locations h3 {
+    padding-bottom: .7rem;
+}
+.locations .firstRow .firstRowDetails, .locations .secondRow .secondRowDetails {
+    padding-bottom: 1.5rem;
+}
+.locations .firstRow .firstRowDetails h4, .locations .secondRow .secondRowDetails h4 {
+   text-transform: uppercase;
+}
+.locations .firstRow .firstRowDetails *, .locations .secondRow .secondRowDetails * {
+    padding-bottom: 0.3rem;
+}
+.locations .firstRow .firstRowDetails p, .locations .secondRow .secondRowDetails p {
+    font-size: 14px;
+}
+
+.underline {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+.footer-bottom {
+    width: 93vw;
+    margin: 0 auto;
+} 
+ 
+.footer-bottom p {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+.footer-bottom .img {
+    width: 12rem;
+    margin-left: 50%;
+transform: translateX(-50%);
+}
+.footer-bottom .img img {
+    width: 100%;
+}
+
+/* ========================End of Footer"========================*/
+/* ========================MEDIA QUERIES"==============================*/
+@media screen and (max-width:800px) {
+    .logo img {
+        width: 8rem;
+        z-index: 10;
+     }
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 85%;
+        background-color: #fff;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082);
+        z-index: 2;
+    
+    }
+    .text {
+        position: absolute;
+        color: aliceblue;
+        width: 65vw;
+        top: 20%;
+        left: 3.5rem;
+    }
+    .text  h1 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    .text .btn {
+        background-color: rgba(255, 255, 0, 0.637);
+        outline: none;
+        border: none;
+        padding: .3rem 1.5rem;
+        margin-top: 2rem;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .dot {
+        position: relative;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+       border:1px solid aliceblue;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background 0.6s ease;
+        z-index: 7;
+        top: -13rem;
+        left: 3.5rem;
+    }
+}
+@media screen and (max-width:678px) {
+    .closeMenu .fa-times {
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        z-index: 9;
+        color: aliceblue;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .testimonial-carousel {
+        width: 70%;  
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .testimonial-carousel .testimonial-carousel-container  {
+        width: 100vw;
+        display: flex;
+        margin: 2rem 0 4rem 0;
+    }
+    .testimonial-carousel-container .carousel-item {
+        display: flex;
+        min-width: 100%;
+        gap: 1.2rem;
+    }
+    .testimonial-carousel-container .carousel-item img {
+        width: 8rem;
+        height: 6.5rem;
+    }
+    .testimonial-carousel-container .carousel-item .carousel-item-description {
+        width: 35%;
+    }
+    .testimonial-carousel-container .carousel-item .carousel-item-description p {
+        width: 100%;
+    }
+    .testimonial-carousel-container .carousel-item .carousel-item-description h3 {
+    margin-top: 1.6rem;
+    color: rgba(0, 0, 0, 0.664);
+    }
+}
+@media screen and (max-width:500px) {
+    .closeMenu .fa-times {
+        position: absolute;
+        right: 4rem;
+        top: 3rem;
+        z-index: 9;
+        color: aliceblue;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .navbar {
+        padding: 1.5rem 3.5rem;
+        background-color: transparent;
+        z-index: 29;
+        
+    }
+    .nav-center { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .logo img {
+        width: 6rem;
+        z-index: 10;
+     }
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 73%;
+        background-color: #fff;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.082);
+        z-index: 2;
+    
+    }
+    .text {
+        position: absolute;
+        color: aliceblue;
+        width: 60vw;
+        top: 20%;
+        left: 3.5rem;
+    }
+    .text  h1 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    .text .btn {
+        background-color: rgba(255, 255, 0, 0.637);
+        outline: none;
+        border: none;
+        padding: .2rem 1.0rem;
+        margin-top: 2rem;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .dot {
+        position: relative;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+       border:1px solid aliceblue;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background 0.6s ease;
+        z-index: 7;
+        top: -30rem;
+        left: 3.5rem;
+    }
+    .overlay-menu {
+        margin-top: -7rem;
+        margin-left: 20%;
+
+    }
+    .overlay-menu ul {
+        margin-top: 4rem;
+        margin-right: 3rem;
+    }
+    .overlay-menu  li {
+        margin-top: 1.2rem;
+        text-align: center;
+        list-style: none;
+        }
+    .letGetStarted .title h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: rgba(0, 0, 255, 0.733);
+            font-size: 1.2rem;
+            }
+     .programmeCategory {
+                margin: 0 0rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+ .programmeCategory .category {
+                width: 12rem;
+                background-color: white;
+                padding: 2rem 1rem;
+                display: grid;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, 0.281);
+            }
+.LatestNewsCategory {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+.LatestNewsCategory .latestNewsDetails{
+                width: 14rem;
+                background-color: white;
+                display: grid;
+                justify-content: center;
+                border-radius: 10px;
+                box-shadow: 0 15px 20px rgba(0, 0, 0, 0.281);
+            
+            }
+.latestNews .viewMore .btn {
+                background-color: rgba(255, 76, 10, 0.801);
+                outline: none;
+                border: none;
+                padding: .5rem 1.5rem;
+                margin-top: 2rem;
+                cursor: pointer;
+            }
+.OpenLabAdvantage {
+                background:linear-gradient( 0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),  url("img/network-Admin.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                height: 100vh;
+                padding: 0 10rem;
+            }
+            .OpenLabAdvantageDetails {
+                display: flex;
+                width: 80vw;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin-left: -7rem;
+        
+             }
+             .OpenLabAdvantageDetails h1 {
+                 color: aliceblue;
+                 font-weight: 900;
+                 font-size: 1.2rem;
+                 margin-bottom: 1.5rem;
+                 text-align: center;
+                 margin-top: 4rem;
+               margin-left: -2.7rem;
+                 text-align: center;
+             }
+.OpenLabAdvantageDetails h2 {
+                 color: aliceblue;
+                 margin-left: -2.7rem;
+                 width: 70vw;
+                 font-size: 1rem;
+                 text-align: center;
+             }
+.OpenLabAdvantageDetails p {
+                 font-size: 1.2rem;
+                 margin: 1rem 2rem;
+                 text-align: center;
+                 color: aliceblue;
+             }
+.OpenLabVideoDetailsLeft {
+                width: 60vw;
+            }
+.OpenLabVideoDetailsLeft h1 {
+                color: aliceblue;
+                font-size: 1.3rem;
+                text-align: center;
+                margin-bottom: 1.2rem;
+            }
+.OpenLabVideoDetailsLeft p {
+                color: aliceblue;
+                font-size: 1.1rem;
+                padding-bottom: 1rem;
+            }
+.OpenLabVideoDetailsLeft .OpenLabVideoDetailsLeft-list h3 {
+            color: aliceblue;
+            }
+.diplomaProgrammesTitle h1, .certificateProgrammesTitle h1 {
+                text-align: center;
+                padding-bottom: 1rem;
+                color: silver;
+                text-align: center;
+            }
+.diplomaProgrammesTitle h3, .certificateProgrammesTitle h3 {
+                padding-bottom: 2rem;
+                color: rgba(0, 0, 0, 0.712);
+                text-align: center;
+
+}
+.contactAndLocationCenters {
+    background-color: snow;
+    padding: 3rem;
+    width: 13rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.contactAndLocation .title {
+    margin: 0 auto;
+    text-align: center;
+    width: 65vw;
+    color: rgba(0, 0, 0, 0.582);
+}
+.testimonial-carousel {
+    width: 77%;  
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial-carousel .testimonial-carousel-container  {
+    width: 100vw;
+    display: flex;
+    margin: 2rem 0 4rem 0;
+}
+.testimonial-carousel-container .carousel-item {
+    display: flex;
+    min-width: 100%;
+    gap: 1.2rem;
+}
+.testimonial-carousel-container .carousel-item img {
+    width: 8rem;
+    height: 6.5rem;
+}
+.testimonial-carousel-container .carousel-item .carousel-item-description {
+    width: 40%;
+}
+.testimonial-carousel-container .carousel-item .carousel-item-description p {
+    width: 100%;
+}
+.testimonial-carousel-container .carousel-item .carousel-item-description h3 {
+margin-top: 1.6rem;
+color: rgba(0, 0, 0, 0.664);
+}
+}
+/* ========================END OF MEDIA QUERIES"========================*/
+
+

@@ -1,0 +1,584 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+   
+}
+
+/*==============================ABOUT US================================*/
+.aboutOpenLabsGhana {
+    padding: 5rem 0;
+    background-color: rgba(192, 192, 192, 0.452);
+}
+.aboutOpenLabsGhana .openLabHistory {
+    margin: 0 auto;
+}
+
+.aboutOpenLabsGhana .openLabHistory .title {
+    margin-bottom: 3rem;
+}
+.aboutOpenLabsGhana .openLabHistory .title h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: blue;
+}
+.openLabHistory .history {
+    margin: 0 auto;
+    width: 80vw;
+}
+.openLabHistory .history p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.495rem;
+    color: rgba(0, 0, 0, 0.678);
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.missionVisionCoreValues {
+    padding-top: 5rem;
+    margin: 0 auto;
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.missionVisionCoreValues .our {
+    background-color: #fff;
+    width: 20rem;
+    padding: 2.2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.123);
+}
+.missionVisionCoreValues .our h2 {
+    text-align: center;
+    color: rgba(0, 0, 255, 0.795);
+    padding-bottom: 1em;
+}
+.missionVisionCoreValues .our p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.678);
+}
+.our li {
+    color: rgba(0, 0, 0, 0.678);
+}
+/*==============================END OF ABOUT US================================*/
+
+.humbleBeginning {
+    background-color: blue;
+    padding: 5rem 0;
+    margin: 0 auto;
+}
+.humbleBeginning .title {
+    margin: 0 auto;
+    width: 85vw;
+}
+.humbleBeginning .title h1 {
+text-align: center;
+margin-bottom: 3rem;
+color: #fff;
+font-size: 2rem;
+}
+.humbleBeginning .title p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.humbleBeginningDetails {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+.humbleBeginningDetails  .humbleBeginningLeft {
+    width: 100vw;
+}
+.humbleBeginningDetails  .humbleBeginningLeft img {
+    width: 100%;
+    height: 30rem;
+}
+.humbleBeginningDetails  .humbleBeginningRight {
+    width: 90vw;
+}
+.humbleBeginningDetails  .humbleBeginningRight h1 {
+   color: #fff;
+   font-size: 1.7rem;
+   padding-bottom: 1.5rem;
+}
+.humbleBeginningDetails  .humbleBeginningRight p {
+   color: rgba(255, 255, 255, 0.849);
+
+}
+.inspirationContainer {
+    background-color: rgba(212, 164, 3);
+    padding: 10rem 0;
+}
+.inspirationContainer .title {
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+.inspirationContainer .title h1 {
+   text-align: center;
+   font-size: 2.3rem;
+}
+.inspirationContainer .inspiration {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+    gap: 6rem;
+}
+.inspiration .inspirationLeft {
+width: 40vw;
+}
+.inspiration .inspirationLeft img {
+    width: 20rem;
+    margin-left: 2rem;
+    padding-bottom: 1rem;
+}
+.inspiration .inspirationLeft p {
+   font-size: 1.5rem;
+   color: #fff;
+}
+.inspiration .inspirationRight  {
+    width: 40vw;
+}
+.inspiration .inspirationRight img {
+    width: 100%;
+}
+.inspirationContainer .btn {
+   display: flex;
+   justify-content: center;
+}
+.inspirationContainer .btn button {
+position: relative;
+ background-color: rgba(255, 68, 0, 0.76);
+ border: none;
+ outline: none;
+ padding: 1rem 2rem;
+}
+.inspirationContainer .btn button a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.inspirationContainer .btn button::before {
+   content: "";
+   position: absolute;
+   background-color: rgba(255, 68, 0, 0.76);
+   width: 25rem;
+   height: 2px;
+   transform: translate(-27rem, .5rem);
+   }
+.inspirationContainer .btn button::after {
+   content: "";
+   position: absolute;
+   background-color: rgba(255, 68, 0, 0.76);
+   width: 25rem;
+   height: 2px;
+   transform: translate(2rem, .5rem);
+   }
+.teamContainer {
+    padding: 5rem 0;
+}
+.teamContainer .title h1, .servicesAndAmenitiesContainer .title h1 {
+   text-align: center;
+   font-size: 2rem;
+   color: rgb(3, 96, 218);
+}
+.teamContainer .title p, .servicesAndAmenitiesContainer .title p {
+   text-align: center;
+   font-size: 1.5rem;
+   padding: 1.5rem 0; 
+   color: rgba(0, 0, 0, 0.644);
+}
+.underlineTeam {
+    margin: 0 auto;
+    height: 1px;
+    width: 80vw;
+    background-color: silver;
+    margin-bottom: 3rem;
+}
+.teamContainer .teamDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 0 3rem;
+    width: 90vw;
+}
+.teamContainer .teamDetails .teamMember {
+    position: relative;
+    width: 23rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.223);
+}
+.teamContainer .teamDetails .teamMember::before {
+    position: absolute;
+    content: "";
+    width: 23rem;
+    height: 12rem;
+    background-color: rgba(192, 192, 192, 0.521);
+    z-index: -99;
+}
+.teamContainer .teamDetails .teamMember h1 {
+    text-align: center;
+    padding-top: 2rem;
+    color: rgba(0, 0, 0, 0.61);
+}
+.teamContainer .teamDetails .teamMember .teamMemberImage {
+    width: 10rem;
+    height: 10rem;
+    padding: 2rem 0;
+   margin: 0 auto;
+}
+.teamContainer .teamDetails .teamMember .teamMemberImage img {
+   border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #fff;
+}
+.teamContainer .teamDetails .teamMember .teamMemberTitle {
+    width: 20rem;
+    padding-bottom: 1.5rem;
+}
+.teamContainer .teamDetails .teamMember .teamMemberTitle h3 {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.616);
+}
+.teamContainer .teamDetails .teamMember  .teamMemberProfile {
+    width: 21rem;
+    padding: 0 1rem;
+}
+.teamContainer .teamDetails .teamMember .teamMemberProfile p {
+  text-align: justify;
+  padding-bottom: 1.5rem;
+}
+
+.teamContainer .btn {
+    display: flex;
+    justify-content: center; 
+    margin-top: 8rem;
+}
+.teamContainer .btn button {
+    position: relative;
+    background-color: transparent;
+     border: 1px solid rgba(0, 0, 0, 0.395);
+     outline: none;
+     padding: .8rem 1.5rem;
+    }
+    .teamContainer .btn button a {
+        font-size: .8rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.947);
+    }
+    .teamContainer .btn button::before {
+       content: "";
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.397);
+       width: 30rem;
+       height: 1px;
+       transform: translate(-31.5rem, .5rem);
+       }
+       .teamContainer .btn button::after {
+       content: "";
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.397);
+       width: 30rem;
+       height: 1px;
+       transform: translate(1.5rem, .5rem);
+       }
+       .servicesAndAmenitiesContainer {
+        background-color: rgba(192, 192, 192, 0.658);
+       }
+       .servicesAndAmenitiesContainer .title {
+        padding-top: 6.5rem;
+       }
+       .servicesAndAmenitiesDetails {
+        display: grid;
+        padding: 4rem 4rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+       }
+      /* .servicesAndAmenitiesDetails .servicesAndAmenities {
+        
+       }*/
+       .servicesAndAmenitiesDetails .servicesAndAmenities h2 {
+          color: rgba(0, 81, 255, 1);
+          font-size: 1.7rem;
+          padding-bottom: 1rem;
+       }
+       .servicesAndAmenitiesDetails .servicesAndAmenities p {
+        color: rgba(0, 0, 0, 0.753);
+    }
+       
+    /*=============================MEDIA QUERIES================================*/
+    @media screen and (max-width:600px) {
+        .aboutOpenLabsGhana {
+            padding: 5rem 0;
+            background-color: rgba(192, 192, 192, 0.452);
+        }
+        .aboutOpenLabsGhana .openLabHistory {
+            margin: 0 auto;
+        }
+        .aboutOpenLabsGhana .openLabHistory .title {
+            margin-bottom: 3rem;
+        }
+        .aboutOpenLabsGhana .openLabHistory .title h1 {
+            text-align: center;
+            font-size: 1rem;
+            color: blue;
+        } 
+        .openLabHistory .history {
+            margin: 0 auto;
+            width: 50vw;
+        }
+        .openLabHistory .history p {
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.678);
+            font-weight: 300;
+            padding-bottom: 1rem;
+        }
+        .missionVisionCoreValues {
+            padding-top: 5rem;
+            margin: 0 auto;
+            width: 90vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        .missionVisionCoreValues .our {
+            background-color: #fff;
+            width: 9rem;
+            padding: 2.2rem;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.123);
+        }
+
+        .humbleBeginning .title {
+            margin: 0 auto;
+            width: 53vw;
+        }
+        .humbleBeginning .title h1 {
+        text-align: center;
+        margin-bottom: 3rem;
+        color: #fff;
+        font-size: 1rem;
+        }
+        .humbleBeginning .title p {
+            color: #fff;
+            font-size: .8rem;
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .humbleBeginningDetails  .humbleBeginningLeft {
+            width: 45vw;
+             margin-left: 4rem;
+        }
+        .humbleBeginningDetails  .humbleBeginningLeft img {
+            width: 100%;
+            height: 30rem;
+        }
+        .humbleBeginningDetails  .humbleBeginningRight {
+            width: 45vw;
+            margin-left: 4rem;
+        }
+        .humbleBeginningDetails  .humbleBeginningRight h1 {
+           color: #fff;
+           font-size: 1.5rem;
+           text-align: center;
+           padding-bottom: 1.5rem;
+        }
+
+    }
+
+    .formContainer {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem 0;
+    }
+    .formContainer .title {
+        width: 53vw;
+    }
+    .formContainer .title h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+        color: rgb(0, 0, 145);
+        font-weight: 800;
+    }
+    .formContainer .title p {
+      font-size: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+    .formContainer .form {
+        background-color: rgba(166, 176, 185, 0.349);
+        width: 53vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+    }
+    .formContainer .form p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.514);
+    }
+    .formContainer .form .formGroup p {
+       
+        color: red;
+        font-weight: bolder;
+        padding-top: 2rem;
+        }
+    .formContainer .form p span {
+     font-weight: bold;
+     color: black;
+    }
+    .formContainer .form button {
+      margin: 1.5rem 40%;
+      width: 12rem;
+      padding: .5rem .5rem;
+      background-color: blue;
+      outline: none;
+      border: none;
+    }
+    .formContainer .form button .fa-angle-right {
+        color: #fff;
+        padding-left: 5px;
+    }
+    .formContainer .form button a {
+        color: #fff;
+    }
+    .formContainer .form form input {
+        width: 50vw;
+        height: 2.3rem;
+        border: none;
+        padding: 0rem .5rem;
+        outline: none;
+        background-color: rgba(245, 245, 245, 0.87);
+    }
+    .formContainer .form label {
+        color: rgba(0, 0, 0, 0.5);
+        padding-left: .3rem;
+    }
+    .formContainer .form textarea {
+        border: none;
+        padding: 1.5rem 1rem;
+        outline: none;
+        background-color: rgba(245, 245, 245, 0.87);
+    }
+    .formContainer .form input::placeholder {
+        font-size: 1rem;
+        padding: 1rem 1rem;
+
+    }
+    .formContainer .form .formGroup {
+        margin: 1.2rem 0;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .blogPageImage {
+        background:linear-gradient( 0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),  url("img/openlabs-blog-1603x500.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPageImage h1 {
+        color: #fff;
+        font-size: 3.5rem;
+    }
+    .featuredArticle .title {
+        margin: 0 auto;
+    }
+    .featuredArticle .title h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: rgba(0, 0, 0, 0.932);
+        padding-bottom: 2rem;
+    }
+    .featuredArticle .title .underlineArticles {
+        display: flex;
+        margin: 0 auto;
+        height: 2px;
+        width: 4vw;
+        background-color: orangered;
+        margin-bottom: 2rem;
+    }
+    .featuredArticleSlider {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        margin: 0 auto;
+    }
+    .featuredArticleSlider .slider {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .featuredArticleSlider .sliderDetails {
+    position: relative;
+     width: 20rem;
+     height: 20rem;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+    .featuredArticleSlider .sliderDetails img {
+        width: 100%;
+        height: 100%;
+    }
+    .sliderInfo {
+        position: absolute;
+       background-color: rgba(0, 0, 0, 0.582);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sliderInfo button {
+        background-color: orangered;
+        padding: .5rem 1rem;
+        margin-bottom: 1rem;
+        outline: none;
+        border: none;
+    }
+    .sliderInfo button a {
+        color: #fff;
+        font-weight: 800;
+    }
+    .sliderInfo p {
+        color: #fff;
+        font-size: 1.9rem;
+        padding-left: 1rem;
+        font-weight: 800;
+        text-align: left;
+    }
+    .sliderInfo h6 {
+        color: #fff;
+        padding-left: 1rem;
+        display: flex;
+        align-self: flex-start;
+        padding-top: 1rem;
+    }
+    .contolBtn {
+        display: flex;
+        gap: 1rem;
+    }
+    .contolBtn .fa-arrow-right, .contolBtn .fa-arrow-left {
+        font-size: larger;
+        cursor: pointer;
+    }

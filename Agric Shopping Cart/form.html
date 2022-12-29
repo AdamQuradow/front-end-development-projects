@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Step Registration Form</title>
+    <link rel="stylesheet" href="src/form.css">
+    <link rel="stylesheet" href="src/cart.css">
+
+    <link rel="stylesheet" href="font-awesome 6/css/all.min.css">
+
+</head>
+<body>
+    <div class="navbar" id="navbar" style="justify-content: space-around; display: flex;">
+      
+        <a href="#">
+           <h2>Agri<span class="span">S</span>tore</h2>
+        </a>
+       
+      <div class="product-list-search">
+         
+        <ul class="product-list">
+           <li><a href="home.html">Home </a> </li>
+          <li><a href="cart.html">Products</a> </i>
+          <li><a href="form.html">Register</a> </i>
+          <li><a href="form.html">Login</a> </i>
+
+        </li>
+        </ul>
+      </div>
+      <a href="cartbill.html">
+         <div class="cart">
+            <i class="fa fa-shopping-cart"></i>
+            <div id="cartAmount" class="cartAmount">0</div>
+         </div>
+      </a>
+
+      <div class="menu-toggle">
+        <i class="fa fa-bars"></i>
+     </div>
+      
+     </div>
+
+  <!-----====================cart========================-->
+  <div class="cart-overlay">
+    <div class="cart-submenu">
+       <span class="close-cart">
+          <i class="fas fa-times"></i>
+      </span>
+ 
+      <div class="product-list-submenu">
+          
+       <ul class="product-lists">
+          <li><a href="home.html">Home </a> </li>
+         <li><a href="cart.html">Products</a> </i>
+         <li><a href="form.html">Register</a> </i>
+         <li><a href="form.html">Login</a> </i>
+ 
+       </li>
+       </ul>
+     </div>
+ 
+    </div>
+ </div>
+ 
+ <!-----====================end of cart========================-->
+    <div id="page" class="site">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"></div>
+                    <ul class="progress-steps">
+                    <li class="step active">
+                        <span>1</span>
+                        <p>Personal <br><span>1 minutes to complete</span></p>
+                    </li>
+                    <li class="step">
+                        <span>2</span>
+                        <p>Contact <br><span>3 minutes to complete</span></p>
+                    </li>
+                    <li class="step">
+                        <span>3</span>
+                        <p>Security <br><span>3 minutes to complete</span></p>
+                    </li>
+                     </ul>
+                </div>
+                <form action="">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                        <h2>Personal Information</h2>
+                        <p>enter your Personal Information correctly</p>
+                        <div>
+                            <label for="">First Name</label>
+                            <input type="text" placeholder="e.g John">
+                        </div>
+                        <div>
+                            <label for="">Last Name</label>
+                            <input type="text" placeholder="e.g Paul">
+                        </div>
+                        <div class="birth">
+                            <label for="">Date of Birth</label>
+                            <div class="grouping">
+                                <input type="text" patter="[0-9]*" name="day" min="0" max="31" placeholder="DD">
+                                <input type="text" patter="[0-9]*" name="month" min="0" max="12"  placeholder="MM">
+                                <input type="text" patter="[0-9]*" name="year" min="0" max="2050"  placeholder="YYYY">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Contact</h2>
+                         <div>
+                            <label for="">Phone</label>
+                            <input type="tel" placeholder="+233XXXXXXXXX"> 
+                         </div>
+                         <div>
+                            <label for="">Address</label>
+                            <input type="text" placeholder="Street Address"> 
+                         </div>
+                         <div>
+                            <input type="text" placeholder="App, Suite, Building"> 
+                         </div>
+                         <div>
+                            <label for="">City</label>
+                            <input type="text" placeholder="e.g Accra"> 
+                         </div>
+                         <div>
+                            <label for="">Region</label>
+                            <input type="text" placeholder="e.g Northern"> 
+                         </div>
+                         <div>
+                            <label for="">Country</label>
+                          <select name="" id="">
+                              <option value="" selected disabled>Please Select</option>
+                              <option value="Ghana">Ghana</option>
+                              <option value="Senegal">Senegal</option>
+                              <option value="Cameroon">Cameroon</option>
+                              <option value="Angola">Angola</option>
+                              <option value="Botswana">Botswana</option>
+                              <option value="Tanzania">Tanzania</option>
+                              <option value="Kenya">Kenya</option>
+                        </select>
+                         </div>
+                         </div>
+                         <div class="form-three form-step">
+                            <div class="bg-svg"></div>
+                            <h2>Security</h2>
+                            <div>
+                                <label for="">Username</label>
+                                <input type="email" placeholder="Type your email">
+                            </div>
+                            <div>
+                                <label for="">Email</label>
+                                <input type="text" placeholder="Username">
+                            </div>
+                            <div>
+                                <label for="">Password</label>
+                                <input type="password" placeholder="Your password">
+                            </div>
+                                <input type="password" placeholder="confirm password">
+                            </div>
+                         <div class="btn-group">
+                            <button type="button" class="btn-prev" disabled>Back</button>
+                            <button type="button" class="btn-next">Next</button>
+                            <button type="button" class="btn-submit">Submit</button>
+                        </div>
+                    </div>
+                  
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+        <div class="copyright">
+           <h2>Agri<span class="span">S</span>tore</h2> <h3>&copy; 2022</h3>
+        </div>
+    
+     <div class="social-media">
+        <h4>FOLLOW US</h4>
+     <div class="icon-group">
+       <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a> 
+       <a href="#"><i class="fab fa-twitter"></i></a>
+       <a href="#"><i class="fab fa-instagram"></i></a>
+       <a href="#"><i class="fab fa-youtube"></i></a>
+       <a href="#"><i class="fab fa-whatsapp"></i></a>
+     </div>
+    </div>
+  
+  
+     </div>
+
+    <script src="src/home.js"></script>
+    <script src="src/form.js"></script>
+</body>
+</html>

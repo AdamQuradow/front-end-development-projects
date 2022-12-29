@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="font-awesome 6/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">AgriStore</a>
+           <div class="menu-btn">
+            <div class="menu-btn_lines"></div>
+           </div>
+       
+            <ul class="menu-items">
+                <li><a href="#" class="menu-item">Home</a></li>
+                <li class="dropdown">
+                <a href="#" class="menu-item expand-btn">Dropdown Menu</a>
+                <ul class="dropdown-menu expandable">
+                    <li><a href="#" class="menu-item">Item 1</a></li>
+                    <li><a href="#" class="menu-item">Item 2</a></li>
+                    <li class="dropdown dropdown-right">
+                        <a href="#" class="menu-item expand-btn">
+                        Item 3 <i class="fas fa-angle-right"></i></a>
+                     <ul class="menu-right expandable">
+                    <li><a href="#" class="menu-item">Item 3.1</a></li>
+                    <li><a href="#" class="menu-item">Item 3.2</a></li>
+                    <li><a href="#" class="menu-item">Item 3.3</a></li>
+                    <li><a href="#" class="menu-item">Item 3.4</a></li>
+                     </ul>
+                    </li>
+                    <li><a href="#" class="menu-item">Item 4</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#" class="menu-item expand-btn">Mega Menu</a>
+                  <div class="mega-menu expandable">
+                    <div class="content">
+                        <div class="col">
+                            <section>
+                                <h2>Featured 1</h2>
+                                <a href="#" class="img-wrapper"><span class="img"><img src="./img/carrot.jpg" alt=""></span></a>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <h2>Featured 2</h2>
+                                <ul class="mega-links">
+                                  <li><a href="#">Item 1</a></li>
+                                  <li><a href="#">Item 2</a></li>
+                                  <li><a href="#">Item 3</a></li>
+                                  <li><a href="#">Item 4</a></li>   
+                                  <li><a href="#">Item 5</a></li>   
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <h2>Featured 3</h2>
+                                <ul class="mega-links">
+                                  <li><a href="#">Item 1</a></li>
+                                  <li><a href="#">Item 2</a></li>
+                                  <li><a href="#">Item 3</a></li>
+                                  <li><a href="#">Item 4</a></li>   
+                                  <li><a href="#">Item 5</a></li>   
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <h2>Featured 4</h2>
+                                <ul class="mega-links">
+                                  <li><a href="#">Item 1</a></li>
+                                  <li><a href="#">Item 2</a></li>
+                                  <li><a href="#">Item 3</a></li>
+                                  <li><a href="#">Item 4</a></li>   
+                                  <li><a href="#">Item 5</a></li>   
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="#" class="menu-item expand-btn">Blog</a>
+                   <div class="mega-menu blog expandable">
+                    <div class="blog">
+                        <div class="content">
+                            <div class="col">
+                        <a href="#" class="img-wrapper"><span class="img"><img src="./img/cabbage1.jpg" alt=""></span></a>
+                        <h2>Title</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+                             architecto facilis reprehenderit accusamus
+                           </p>
+                             <a href="#" class="read-more">read more...</a>
+                            </div>
+                            <div class="col">
+                        <a href="#" class="img-wrapper"><span class="img"><img src="./img/carrot.jpg" alt=""></span></a>
+                        <h2>Title</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+                             architecto facilis reprehenderit accusamus
+                            </p>
+                             <a href="#" class="read-more">read more...</a>
+                            </div>
+                            <div class="col">
+                        <a href="#" class="img-wrapper"><span class="img"><img src="./img/okra.jpg" alt=""></span></a>
+                        <h2>Title</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+                             architecto facilis reprehenderit accusamus
+                            </p>
+                             <a href="#" class="read-more">read more...</a>
+                            </div>
+                            <div class="col">
+                        <a href="#" class="img-wrapper"><span class="img"><img src="./img/mango.jpg" alt=""></span></a>
+                        <h2>Title</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
+                             architecto facilis reprehenderit accusamus
+                           </p>
+                             <a href="#" class="read-more">read more...</a>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                </li>
+                <li><a href="#" class="menu-item">About</a></li>
+            </ul>
+    
+    </header>
+    <section class="section">
+        <h1>MEGA MENU AND MULTI-LEVEL DROPSOWN</h1>
+    </section>
+
+    <script src="responsive.js"></script>
+</body>
+</html>

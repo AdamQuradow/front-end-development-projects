@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul { 
+    display: flex;
+    margin-top: 80px;
+}
+ul  li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul  li  .icon {
+    font-size: 35px;
+    color: #ff4732;
+    margin: 0 53px;
+}
+
+ul li .text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ff4732;
+}
+ul li .progress {
+    position: relative;
+    margin: 12px 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ff4632b4;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 600;
+    z-index: 2;
+    cursor: pointer;
+}
+ul li .progress p {
+    font-size: 13px;
+    font-weight: 800;
+}
+.progress::before {
+    content: " ";
+    position: absolute;
+    width: 115px;
+    height: 5px;
+    background-color: #ff463275;
+    right: 30px;
+    
+}
+.one::before {
+    height: 0;
+    width: 0;
+}
+ul li .progress .fas {
+    display: none;
+}
+ul li .active {
+    background-color: #ff4732;
+}
+
+ul li .active::before {
+    background-color: #ff4732;
+
+}
+
+ul li .active p {
+    display: none;
+}
+ul li .active .fas {
+    font-size: 20px;
+    display: flex;
+}
+
+@media (max-width:1030px) {
+    ul {
+        flex-flow: column;
+    }
+    ul li {
+        flex-flow: row;
+    }
+    ul li .progress {
+        margin: 12px 30px;
+    }
+    ul li:nth-child(5) {
+        margin-left: .85rem;
+    }
+    ul li:nth-child(2) {
+        margin-left: .8rem;
+    }
+    ul li:nth-child(1) {
+        margin-left: .25rem;
+    }
+    .progress::before {
+        width: 5px;
+        height: 25px;
+        bottom: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: -1;
+    }
+    .one::before {
+        height: 0;
+    }
+   
+}
