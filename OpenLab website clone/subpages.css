@@ -91,14 +91,14 @@ font-size: 2rem;
     gap: 2rem;
 }
 .humbleBeginningDetails  .humbleBeginningLeft {
-    width: 100vw;
+    width: 30%;
 }
 .humbleBeginningDetails  .humbleBeginningLeft img {
     width: 100%;
     height: 30rem;
 }
 .humbleBeginningDetails  .humbleBeginningRight {
-    width: 90vw;
+    width: 60%;
 }
 .humbleBeginningDetails  .humbleBeginningRight h1 {
    color: #fff;
@@ -228,6 +228,8 @@ position: relative;
     height: 10rem;
     padding: 2rem 0;
    margin: 0 auto;
+   overflow: hidden;
+  
 }
 .teamContainer .teamDetails .teamMember .teamMemberImage img {
    border-radius: 50%;

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spendy's Bulwark</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.511), rgba(0, 0, 0, 0.511)), url(istockphoto-964884268-612x612.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 0 8%;
+        position: relative;
+        
+    }
+    .logo {
+        width: 100px;
+        padding: 20px 0;
+        border-radius: 100%;
+        box-shadow: 5px 10px 10px rgb(0, 0, 0);
+    }
+    .content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+    .content .header {
+      text-align: left;
+      font-size: 3rem;  
+      color: rgb(0, 153, 255); 
+    }
+    .content .header span {
+      color: rgb(0, 119, 255); 
+      font-weight: 600;
+    }
+    .content h1 {
+        font-size: 64px;
+        font-weight: 600;
+    }
+    .content h1 span {
+        color: #ff3753;
+    }
+    .content button {
+        background-color: transparent;
+        border: 2px solid white;
+        outline: none;
+        padding: 12px 25px;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .content button img {
+        width: 15px;
+        margin-left: 10px;
+        color: #fff;
+    }
+    .launch-time {
+        display: flex;
+    }
+    .launch-time div{
+        flex-basis: 100px;
+    }
+    .launch-time div p{
+       font-size: 60px;
+       margin-bottom: -14px;
+       font-weight: 600;
+       padding-bottom: .8rem;
+    }
+    .launch-time div span{
+      text-align: center;
+      font-size: 1.2rem;
+      padding-top: 5px;
+    }
+    .reproduction {
+        width: 250px;
+        position: absolute;
+        right: 25%;
+        bottom: 0;
+        animation: reproduction 4s linear infinite;
+    }
+    @keyframes reproduction {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+        100% {
+            bottom: 100%;
+            opacity: 1;
+        }
+    }
+    @media screen and (max-width:900px){
+        .logo {
+            width: 80px;
+        }
+     .content .header {
+      text-align: left;
+      font-size: 2.5rem;  
+      color: rgb(0, 153, 255); 
+    }
+    .content h1 {
+        font-size: 54px;
+        font-weight: 600;
+    }
+    .content button {
+        background-color: transparent;
+        border: 2px solid white;
+        outline: none;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .launch-time div p{
+       font-size: 50px;
+       margin-bottom: -14px;
+       font-weight: 600;
+    }
+    .launch-time div span{
+      text-align: center;
+      font-size: 1.1rem;
+      padding-top: 5px;
+    }
+    }
+    @media screen and (max-width:768px){
+        .logo {
+            width: 70px;
+        }
+     .content .header {
+      text-align: left;
+      font-size: 2.5rem;  
+      color: rgb(0, 153, 255); 
+    }
+    .content h1 {
+        font-size: 54px;
+        font-weight: 600;
+        padding: 1.5rem 0;
+    }
+    .content button {
+        background-color: transparent;
+        border: 2px solid white;
+        outline: none;
+        padding: 8px 15px;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .launch-time div p{
+       font-size: 45px;
+       margin-bottom: -14px;
+       font-weight: 600;
+    }
+    .launch-time div span{
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 5px;
+    }
+    }
+    @media screen and (max-width:600px){
+        .logo {
+            width: 70px;
+        }
+     .content .header {
+      text-align: left;
+      font-size: 2.2rem;  
+      color: rgb(0, 153, 255); 
+    }
+    .content h1 {
+        font-size: 36px;
+        font-weight: 600;
+        padding: 1.5rem 0;
+    }
+    .content button {
+        background-color: transparent;
+        border: 2px solid white;
+        outline: none;
+        padding: 8px 15px;
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .launch-time div p{
+       font-size: 45px;
+       margin-bottom: -14px;
+       font-weight: 600;
+    }
+    .launch-time div span{
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 5px;
+    }
+    .reproduction {
+        width: 200px;
+    }
+    }
+    @media screen and (max-width:400px){
+        .logo {
+            width: 50px;
+        }
+     .content .header {
+      text-align: left;
+      font-size: 1.7rem;  
+      color: rgb(0, 153, 255); 
+    }
+    .content h1 {
+        font-size: 27px;
+        font-weight: 600;
+        padding: 1.5rem 0;
+    }
+    .content button {
+        background-color: transparent;
+        border: 2px solid white;
+        outline: none;
+        padding: 5px 10px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    .launch-time div p{
+       font-size: 35px;
+       margin-bottom: -14px;
+       font-weight: 600;
+    }
+    .launch-time div span{
+      text-align: center;
+      font-size: .7rem;
+      padding-top: 5px;
+    }
+    .reproduction {
+        width: 150px;
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <img src="spendy-logo.jpg" alt="" class="logo">
+
+     <div class="content">
+        <p class="header"><span>Spendy's</span> Bulwark</p>
+        <h1>We're <span>coming</span> soon</h1>
+        <div class="launch-time">
+            <div>
+                <p id="days">00</p>
+                <span>Days</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Hours</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutes</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Seconds</span>
+            </div>
+        </div>
+        <button>Learn More <img src="arrowhead-pointing-to-the-right.png" alt=""></button>
+     </div>
+     <img src="uterus.png" alt="" class="reproduction">
+    </div>
+
+
+    <script>
+        let countDownDate = new Date("June 9, 2023 00:00:00").getTime(); 
+        let x = setInterval(function(){
+            let now = new Date().getTime();
+            let distance = countDownDate - now; 
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60 )) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = format(days); 
+            document.getElementById("hours").innerHTML = format(hours); 
+            document.getElementById("minutes").innerHTML = format(minutes); 
+            document.getElementById("seconds").innerHTML = format(seconds); 
+             
+            if(distance < 0) {
+                clearInterval(x); 
+                document.getElementById("days").innerHTML = "00"; 
+            document.getElementById("hours").innerHTML = "00"; 
+            document.getElementById("minutes").innerHTML ="00"; 
+            document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000); 
+
+        function format(t) {
+    return t < 10 ? `0${t}` : t;
+}
+    </script>
+</body>
+</html>
